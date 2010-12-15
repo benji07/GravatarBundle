@@ -15,8 +15,8 @@ class GravatarTwigExtension extends \Twig_Extension
     public function getTokenParsers()
     {
         return array(
-            // {% gravatar email with [size: 80 ]  %}
-            new HelperTokenParser('gravatar', '<email> [with <options:array>]', 'templating.helper.gravatar', 'render'),
+            // {% gravatar email with {size: 80 }  %}
+            new HelperTokenParser('gravatar', '<email> [with <options>]', 'templating.helper.gravatar', 'render'),
         );
     }
 
